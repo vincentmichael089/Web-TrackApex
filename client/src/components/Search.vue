@@ -37,7 +37,7 @@ export default {
                     duration : 3000
                 })
             }else{
-                console.log(this.gamertag)
+                this.$router.push(`/profile/${this.platform}/${this.gamertag}`)
             }
         }
     },
