@@ -30,6 +30,17 @@ export default {
             gamertag : ''
         }
     },
+    methods:{
+        onSubmit(){
+            if(!this.gamertag){
+                this.$toasted.show("Please enter gamertag", {
+                    duration : 3000
+                })
+            }else{
+                console.log(this.gamertag)
+            }
+        }
+    },
     beforeCreate(){
         document.body.className="body-bg-image"
     }

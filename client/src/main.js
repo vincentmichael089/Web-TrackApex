@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueToasted from 'vue-toasted'
 
 Vue.config.productionTip = false
+
+//middleware
+Vue.use(VueToasted)
 
 new Vue({
   router,
