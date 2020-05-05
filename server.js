@@ -10,6 +10,9 @@ const port = process.env.PORT || 8000
 
 const app = express()
 
+//middleware
+app.use('/api/v1/profile/', require('./routes/profile.js'))
+
 app.listen(8000, ()=>{
     console.log(`listening on port ${port}, running as ${process.env.NODE_ENV}`)
 })
